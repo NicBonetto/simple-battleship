@@ -9,4 +9,15 @@ def print_board(board_in):
     for row in board_in:
         print ' '.join(row)
 
+print 'Let\'s play Battleship!'
+print ''
+print 'Board:'
 print_board(board)
+
+def random_row(board_in):
+    return randint(0, len(board_in) - 1)
+def random_col(board_in):
+    return randint(0, len(board_in) - 1)
+
+ship_row = random_row(board)
+ship_col = random_col(board)
